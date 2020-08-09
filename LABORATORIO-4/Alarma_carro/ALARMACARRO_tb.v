@@ -10,7 +10,7 @@ module testbench();
   reg AR2, SV2, SM2;                                                            //Creamos los registros para el modulo alarma_poso
   reg AR22, SV22, SM22;                                                         //Creamos los registros para el modulo alarma_posg
   reg AR3, SV3, SM3;                                                            //Creamos los registros para el modulo alarma_ko
-  reg AR33, SV33, SM33;                                                            //Creamos los registros para el modulo alarma_kp
+  reg AR33, SV33, SM33;                                                          //Creamos los registros para el modulo alarma_kp
   wire AL1, AL11, AL2, AL22, AL33, AL3;                                         //Creamos nuestras salidas como wire
 
   alarma_sopg g1(AR1, SV1, SM1, AL1);
@@ -126,7 +126,7 @@ module testbench();
     #1 AR33 = 1; SV33 = 1; SM33 = 1;
 
               end
-  initial begin
+  initial begin                                                                 //INICIAMOS PARA COLOCAR NUESTROS DATOS EN GTK WAVE
 
       $dumpfile("ALARMACARRO_tb.vcd");
       $dumpvars(0, testbench);
