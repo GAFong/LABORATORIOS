@@ -1,6 +1,8 @@
 //GABRIEL ALEXANDER FONG PENAGOS
 //CARNE 19722
 //LABORATORIO 04
+//LABORATORIO 04
+//EJERCICIO 04 testbench
 
 module testbench();
 
@@ -8,14 +10,14 @@ module testbench();
   reg in2A, in2B, in2C;                                                         //REGISTROS DEL MODULO gl1_2
   reg in3A, in3B, in3C, in3D;                                                   //REGISTROS DEL MODULO op1_3
   reg in4A, in4B, in4C, in4D;                                                   //REGISTROS DEL MODULO op1_4
-  reg in5A, in5B, in5C, in5D;                                                   //REGISTROS DEL MODULO op1_4
-  reg in6A, in6B, in6C;                                                         //REGISTROS DEL MODULO op1_4
-  reg in7A, in7B, in7C, in7D;                                                   //REGISTROS DEL MODULO op1_4
-  reg in8A, in8B, in8C;                                                   //REGISTROS DEL MODULO op1_4
+  reg in5A, in5B, in5C, in5D;                                                   //REGISTROS DEL MODULO op2_1
+  reg in6A, in6B, in6C;                                                         //REGISTROS DEL MODULO gl2_2
+  reg in7A, in7B, in7C, in7D;                                                   //REGISTROS DEL MODULO op2_3
+  reg in8A, in8B, in8C;                                                         //REGISTROS DEL MODULO gl2_4
 
   wire out1, out2, out3, out4, out5, out6, out7, out8;
 
-  gl1_1 G1(in1A, in1B, in1C, out1);                                             //NOMBRAMOS EL MODULO Y ADENTRO COLOCAMOS LAS ENTRADSDAS Y SALIDAS A UTILIZAR
+  gl1_1 G1(in1A, in1B, in1C, out1);                                             //NOMBRAMOS EL MODULO Y ADENTRO COLOCAMOS LAS ENTRADSDAS Y SALIDAS A UTILIZAR, TIENEN QUE COINCIDR CON LAS CREADAS EN EL MODULO
   gl1_2 G2(in2A, in2B, in2C, out2);
   op1_3 OP3(in3A, in3B, in3C, in3D, out3);
   op1_4 OP4(in4A, in4B, in4C, in4D, out4);
@@ -25,6 +27,7 @@ module testbench();
   gl2_4 G8(in8A, in8B, in8C, out8);
 
   initial begin                                                                 //INICIAMOS EL MODULO gl1_1
+    $display("");
     $display(" EJERCICIO 1 TABLA 1");
     $display(" A B C | Y1");
     $display("-------|----");
@@ -40,8 +43,9 @@ module testbench();
 
     end
 
-    initial begin                                                               //
+    initial begin                                                               //INICIAMOS EL MODULO gl1_2
     #9
+    $display("");
     $display(" EJERCICIO 1 TABLA 2");
     $display(" A B C | Y2");
     $display("-------|----");
@@ -57,8 +61,9 @@ module testbench();
 
     end
 
-    initial begin
+    initial begin                                                               // INICIAMOS EL MODULO op1_3
     #17
+    $display("");
     $display(" EJERCICIO 1 TABLA 3");
     $display(" A B C D | Y3");
     $display("---------|----");
@@ -82,8 +87,9 @@ module testbench();
 
     end
 
-    initial begin
+    initial begin                                                               //INICIAMOS EL MODULO op1_4
     #33
+    $display("");
     $display(" EJERCICIO 1 TABLA 4");
     $display(" A B C D | Y4");
     $display("---------|----");
@@ -106,8 +112,9 @@ module testbench();
     #1 in4A = 1; in4B = 1; in4C = 1; in4D = 1;
 
     end
-    initial begin
+    initial begin                                                               //INICIAMOS EL MODULO op2_1
     #49
+    $display("");
     $display(" EJERCICIO 2 TABLA 1");
     $display(" A B C D | Y5");
     $display("---------|----");
@@ -131,8 +138,9 @@ module testbench();
 
     end
 
-    initial begin                                                               //
-    #57
+    initial begin                                                               //INICIAMOSEL MODULO gl2_2
+    #65
+    $display("");
     $display(" EJERCICIO 2 TABLA 2");
     $display(" A B C | Y6");
     $display("-------|----");
@@ -148,8 +156,9 @@ module testbench();
 
     end
 
-    initial begin                                                               //
-    #65
+    initial begin                                                               //INICIAMOS EL MODULO op2_3
+    #73
+    $display("");
     $display(" EJERCICIO 2 TABLA 3");
     $display(" A B C D | Y7");
     $display("---------|----");
@@ -174,23 +183,24 @@ module testbench();
     end
 
     initial begin
-    #81                                                              //INICIAMOS EL MODULO gl1_1
-      $display(" EJERCICIO 2 TABLA 4");
-      $display(" A B C | Y8");
-      $display("-------|----");
-      $monitor("%b %b %b | %b", in8A, in8B, in8C, out8);
-        in8A = 0; in8B = 0; in8C = 0;
-     #1 in8A = 0; in8B = 0; in8C = 1;
-     #1 in8A = 0; in8B = 1; in8C = 0;
-     #1 in8A = 0; in8B = 1; in8C = 1;
-     #1 in8A = 1; in8B = 0; in8C = 0;
-     #1 in8A = 1; in8B = 0; in8C = 1;
-     #1 in8A = 1; in8B = 1; in8C = 0;
-     #1 in8A = 1; in8B = 1; in8C = 1;
+    #89                                                                         //INICIAMOS EL MODULO gl2_4
+    $display("");
+    $display(" EJERCICIO 2 TABLA 4");
+    $display(" A B C | Y8");
+    $display("-------|----");
+    $monitor("%b %b %b | %b", in8A, in8B, in8C, out8);
+       in8A = 0; in8B = 0; in8C = 0;
+    #1 in8A = 0; in8B = 0; in8C = 1;
+    #1 in8A = 0; in8B = 1; in8C = 0;
+    #1 in8A = 0; in8B = 1; in8C = 1;
+    #1 in8A = 1; in8B = 0; in8C = 0;
+    #1 in8A = 1; in8B = 0; in8C = 1;
+    #1 in8A = 1; in8B = 1; in8C = 0;
+    #1 in8A = 1; in8B = 1; in8C = 1;
 
       end
 
-    initial begin
+    initial begin                                                               //INICIAMOS PARA COLOCAR LOS DATOS EN GTK WAVE
 
       $dumpfile("LAB4_tb.vcd");
       $dumpvars(0, testbench);

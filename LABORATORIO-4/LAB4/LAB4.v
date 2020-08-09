@@ -1,6 +1,8 @@
 //GABRIEL ALEXANDER FONG PENAGOS
 //CARNE 19722
+//ELECTRONICA DIGITAL
 //LABORATORIO 04
+//EJERCICIO 04 MODULOS
 
   module gl1_1(input wire A, B, C, output wire Y1);                               //Creamos el modulo para EJERCICIO 1. INCISO 2 EN GATELEVEL
     wire notA, notB, notC, w1, w2, w3;
@@ -29,19 +31,19 @@
 
   endmodule
 
-  module op1_4(input wire A, B, C, D, output wire Y4);
+  module op1_4(input wire A, B, C, D, output wire Y4);                           //Creamos el modulo para EJERCICIO 1. INCISO 4 EN OPERADORES LÓGICOS
 
     assign Y4 = (A & B) | (A & ~C & ~D) | (A & C & D);
 
   endmodule
 
-  module op2_1(input wire A, B, C, D, output wire Y5);
+  module op2_1(input wire A, B, C, D, output wire Y5);                          //Creamos el modulo para EJERCICIO 2. INCISO 1 EN OPERADORES LÓGICOS
 
     assign Y5 = (A & ~C) | (~B & ~C & ~D) | (A & ~D) | (A & ~B);
 
   endmodule
 
-  module gl2_2(input wire A, B, C, output wire Y6);
+  module gl2_2(input wire A, B, C, output wire Y6);                              //Creamos el modulo para EJERCICIO 1. INCISO 2 EN GATELEVEL
 
     wire notB;
 
@@ -50,13 +52,13 @@
 
   endmodule
 
-  module op2_3(input wire A, B, C, D, output wire Y7);
+  module op2_3(input wire A, B, C, D, output wire Y7);                          //Creamos el modulo para EJERCICIO 2. INCISO 3 EN OPERADORES LÓGICOS
 
     assign Y7 = B | (~C & D) | (A & D);
 
   endmodule
 
-  module gl2_4(input wire A, B, C, output wire Y8);
+  module gl2_4(input wire A, B, C, output wire Y8);                             //Creamos el modulo para EJERCICIO 2. INCISO 3 EN GATELEVEL
 
     wire notA, notC, w1;
 
