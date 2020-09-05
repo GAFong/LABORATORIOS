@@ -1,0 +1,575 @@
+$date
+	Sat Sep 05 04:49:02 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 1 ! Y1 $end
+$var wire 1 " SF1 $end
+$var wire 1 # SF0 $end
+$var wire 1 $ S1 $end
+$var wire 1 % S0 $end
+$var wire 4 & Q [3:0] $end
+$var wire 1 ' O3 $end
+$var wire 1 ( O2 $end
+$var wire 1 ) O1 $end
+$var reg 1 * A $end
+$var reg 1 + A1 $end
+$var reg 1 , B $end
+$var reg 4 - D [3:0] $end
+$var reg 1 . clk $end
+$var reg 1 / clk2 $end
+$var reg 1 0 reset $end
+$var reg 1 1 reset2 $end
+$var reg 1 2 set $end
+$scope module U1 $end
+$var wire 4 3 D [3:0] $end
+$var wire 1 . clk $end
+$var wire 1 0 reset $end
+$var wire 1 2 set $end
+$var reg 4 4 Q [3:0] $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 * A $end
+$var wire 1 , B $end
+$var wire 1 % S00 $end
+$var wire 1 $ S11 $end
+$var wire 1 # SF0 $end
+$var wire 1 " SF1 $end
+$var wire 1 ! Y $end
+$var wire 1 . clk $end
+$var wire 1 0 reset $end
+$var wire 1 5 S1 $end
+$var wire 1 6 S0 $end
+$scope module U1 $end
+$var wire 1 " D $end
+$var wire 1 . clk $end
+$var wire 1 0 reset $end
+$var reg 1 5 Q $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 # D $end
+$var wire 1 . clk $end
+$var wire 1 0 reset $end
+$var reg 1 6 Q $end
+$upscope $end
+$upscope $end
+$scope module U3 $end
+$var wire 1 + A $end
+$var wire 1 ) O1 $end
+$var wire 1 ( O2 $end
+$var wire 1 ' O3 $end
+$var wire 1 7 SF0 $end
+$var wire 1 8 SF1 $end
+$var wire 1 9 SF2 $end
+$var wire 1 / clk $end
+$var wire 1 1 reset $end
+$var wire 1 : S2 $end
+$var wire 1 ; S1 $end
+$var wire 1 < S0 $end
+$scope module U1 $end
+$var wire 1 7 D $end
+$var wire 1 / clk $end
+$var wire 1 1 reset $end
+$var reg 1 < Q $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 8 D $end
+$var wire 1 / clk $end
+$var wire 1 1 reset $end
+$var reg 1 ; Q $end
+$upscope $end
+$scope module U3 $end
+$var wire 1 9 D $end
+$var wire 1 / clk $end
+$var wire 1 1 reset $end
+$var reg 1 : Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+bx 4
+bx 3
+x2
+x1
+00
+1/
+1.
+bx -
+x,
+x+
+x*
+x)
+x(
+x'
+bx &
+x%
+x$
+x#
+x"
+x!
+$end
+#1
+b1111 &
+b1111 4
+0/
+0.
+12
+#2
+b0 &
+b0 4
+1/
+1.
+02
+b0 -
+b0 3
+#3
+0/
+0.
+b101 -
+b101 3
+#4
+b1001 &
+b1001 4
+1/
+1.
+b1001 -
+b1001 3
+#5
+0"
+0!
+b0 &
+b0 4
+0%
+06
+0$
+05
+0/
+0.
+10
+b1100 -
+b1100 3
+#6
+x"
+x%
+x6
+1/
+1.
+00
+b0 -
+b0 3
+#7
+0/
+0.
+b1 -
+b1 3
+#8
+x!
+b1001 &
+b1001 4
+x$
+x5
+1/
+1.
+b1001 -
+b1001 3
+#9
+b1111 &
+b1111 4
+0/
+0.
+12
+#10
+b11 &
+b11 4
+1/
+1.
+02
+b11 -
+b11 3
+#11
+0"
+0!
+b0 &
+b0 4
+0%
+06
+0$
+05
+0/
+0.
+10
+#12
+x"
+b100 &
+b100 4
+x%
+x6
+1/
+1.
+00
+b100 -
+b100 3
+#13
+0/
+0.
+#14
+x!
+b1011 &
+b1011 4
+x$
+x5
+1/
+1.
+b1011 -
+b1011 3
+#15
+0/
+0.
+b1001 -
+b1001 3
+#16
+b1001 &
+b1001 4
+1/
+1.
+#17
+0"
+0!
+b0 &
+b0 4
+0%
+06
+0$
+05
+0/
+0.
+10
+#18
+x"
+b1001 &
+b1001 4
+x%
+x6
+1/
+1.
+00
+#19
+0/
+0.
+#20
+0%
+06
+1/
+1.
+0"
+0#
+0,
+0*
+#21
+0/
+0.
+#22
+1%
+16
+1/
+1.
+0#
+1*
+#23
+1#
+b0 &
+b0 4
+0%
+06
+0/
+0.
+10
+#24
+0#
+1"
+b1001 &
+b1001 4
+1%
+16
+1/
+1.
+00
+1,
+#25
+0/
+0.
+#26
+1!
+0%
+06
+1$
+15
+1/
+1.
+#27
+0/
+0.
+#28
+1/
+1.
+#29
+0"
+1#
+0!
+b0 &
+b0 4
+0$
+05
+0/
+0.
+10
+#30
+b1001 &
+b1001 4
+1/
+1.
+00
+0#
+0,
+0*
+#31
+0/
+0.
+#32
+1%
+16
+1/
+1.
+0#
+1*
+#33
+0/
+0.
+#34
+0%
+06
+1/
+1.
+0*
+#35
+b0 &
+b0 4
+0/
+0.
+10
+#36
+b1001 &
+b1001 4
+1/
+1.
+00
+#37
+0/
+0.
+#38
+1/
+1.
+#39
+0/
+0.
+#40
+08
+0)
+0<
+0(
+0;
+0'
+0:
+1/
+1.
+11
+#41
+b0 &
+b0 4
+0/
+0.
+10
+09
+17
+1+
+01
+#42
+18
+1)
+1<
+b1001 &
+b1001 4
+1/
+1.
+00
+#43
+0/
+0.
+#44
+07
+1(
+1;
+1/
+1.
+#45
+0/
+0.
+#46
+19
+18
+0)
+0<
+1/
+1.
+#47
+b0 &
+b0 4
+0/
+0.
+10
+#48
+17
+1'
+1:
+b1001 &
+b1001 4
+1/
+1.
+00
+#49
+0/
+0.
+07
+09
+0+
+#50
+17
+0'
+0:
+1/
+1.
+#51
+0/
+0.
+07
+19
+1+
+#52
+17
+1'
+1:
+1/
+1.
+#53
+b0 &
+b0 4
+0/
+0.
+10
+#54
+08
+1)
+1<
+b1001 &
+b1001 4
+1/
+1.
+00
+#55
+0/
+0.
+#56
+07
+0(
+0;
+1/
+1.
+#57
+0/
+0.
+#58
+09
+0)
+0<
+1/
+1.
+#59
+b0 &
+b0 4
+0/
+0.
+10
+#60
+17
+0'
+0:
+b1001 &
+b1001 4
+1/
+1.
+00
+#61
+0/
+0.
+#62
+18
+1)
+1<
+1/
+1.
+#63
+0/
+0.
+07
+08
+0+
+#64
+19
+0)
+0<
+1/
+1.
+#65
+b0 &
+b0 4
+0/
+0.
+10
+#66
+17
+1'
+1:
+b1001 &
+b1001 4
+1/
+1.
+00
+#67
+0/
+0.
+#68
+1)
+1<
+1/
+1.
+#69
+0/
+0.
+#70
+1/
+1.
