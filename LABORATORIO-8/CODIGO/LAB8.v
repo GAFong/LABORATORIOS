@@ -38,7 +38,6 @@ module ALUU(input wire [3:0]A,B,
             output reg [3:0]Sal);
 
 
-
   always @ (A,B,SEL) begin //SIEMPRE QUE OCURRA UN CAMBIO EN A B O SEL REALIZARLO EN EL MOMENTO
     case (SEL)            //EL SEL SELECCIONA EL CASE QUE TIENE 8 POSIBLES CASOS DIFERENTES
         3'b000: Sal <= A & B ; //FUNCION  A AND B

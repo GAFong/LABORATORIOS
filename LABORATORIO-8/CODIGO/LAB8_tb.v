@@ -67,7 +67,7 @@ module testbench();
 
 //REALIZAMOS LAS PRUEBAS DEL MODULO ALUU Y PROBAMOS TODAS LAS FUNCIONES
   initial begin
-  #40
+  #41
   $display("\n");
   $display(" ALU ");
   $display("CLK \t  A \t B  \t  SEL \tOUT");
