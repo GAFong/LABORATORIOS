@@ -44,9 +44,9 @@ module testbench ();
   L = 0; U = 0; P = 0; ST = 0; ON = 0; t =0; //INICIALIZAMOS NUESTRAS ENTRADAS RESETEAMOS NUESTRAS FSM
   #1
   $display("\n");
-  $display("ESTADO ACTUAL = SA \n ESTADO FUTURO = SF \n PP = PUERTA PILOTO \n PS = PUERTA SECUNDARIA \n M = MOTOR \n F = FUNCIONES ELECTRICAS \n TA = TABLERO");
-  $display("t \t CLOCK \t   SA \t  SF \t PP \t PS \t M \t F \t TA ");
-  $monitor("%d \t %b \t  %b \t %b \t %b \t %b \t %b \t %b \t %b" ,t, clk, SA1[2:0], SF1[2:0], PP, PS, M, F, TA[1:0]);
+  $display("ESTADO ACTUAL = SA \n ESTADO FUTURO = SF \n PP = PUERTA PILOTO \n PS = PUERTA SECUNDARIA \n M = MOTOR \n F = FUNCIONES ELECTRICAS \n TA = TABLERO \n L = LOCKED \n U = UNLOCKED \n P = SEÑAL P \n ST = STAR ");
+  $display("t \t CLOCK \t L \t U \t P \t ST \t ON | \t   SA \t  SF \t PP \t PS \t M \t F \t TA ");
+  $monitor("%d \t %b \t %b \t %b \t %b \t %b \t %b  | \t  %b \t %b \t %b \t %b \t %b \t %b \t %b" ,t, clk, L, U, P, ST, ON, SA1[2:0], SF1[2:0], PP, PS, M, F, TA[1:0]);
      reset1 = 0;
   #1 ST = 1;                   //INTENTAMOS ENCENDER EL MOTOR
   #2 ST = 0; ON = 1;           //INTENTAMOS ENCENDER LAS FUNCIONES
@@ -81,9 +81,9 @@ module testbench ();
   #60 //INICIAMOS LA FSM2
   SE = 0; BE[2:0] = 0; reset1 =1;
   $display("\n");
-  $display("SA = ESTADO ACTUAL \n SF = ESTADO FUTURO \n A = ALARMA");
-  $display("t \t CLOCK \t   SA \t  SF \t A \t SR \t PO \t ME \t P ");
-    $monitor("%d \t %b \t  %b \t %b \t %b \t %b \t %b  \t %b \t %b"  ,t,clk, SA2[2:0], SF2[2:0], A[1:0], SR[1:0], PO[1:0], ME, P2);
+  $display("SA = ESTADO ACTUAL \n SF = ESTADO FUTURO \n A = ALARMA \n BE = BOTONES DE EMERGENCIA \n SE = SENSOR DE GOLPE");
+  $display("t \t CLOCK \t  BE \t SE |\t SA \t  SF \t A \t SR \t PO \t ME \t P ");
+    $monitor("%d \t %b \t  %b \t %b  |\t %b \t %b \t %b \t %b \t %b  \t %b \t %b"  ,t,clk,BE, SE, SA2[2:0], SF2[2:0], A[1:0], SR[1:0], PO[1:0], ME, P2);
   #2 BE = 3'b001; reset1 =0;    //CAMBIAMOS A ESTADO DE PANICO
   #2 BE = 3'b010;               //DE ESTADO DE PANICO CAMBIAMOS A EMERGENCIA
   #2 BE = 3'b011;               //DE ESTADO DE EMERGENCIA CAMBIAMOS BUSCAR
