@@ -1,0 +1,326 @@
+$date
+	Fri Nov 06 23:54:58 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench $end
+$var wire 1 ! ZERO $end
+$var wire 4 " OUT [3:0] $end
+$var wire 4 # DATA [3:0] $end
+$var wire 1 $ CARRY $end
+$var wire 4 % ALUY [3:0] $end
+$var wire 4 & ACU [3:0] $end
+$var reg 3 ' F [2:0] $end
+$var reg 4 ( OPRND [3:0] $end
+$var reg 1 ) clk $end
+$var reg 1 * enableA $end
+$var reg 1 + enableB1 $end
+$var reg 1 , enableB2 $end
+$var reg 1 - resetA $end
+$scope module U1 $end
+$var wire 4 . ACU [3:0] $end
+$var wire 4 / ALUY [3:0] $end
+$var wire 4 0 DATA [3:0] $end
+$var wire 3 1 F [2:0] $end
+$var wire 4 2 OPRND [3:0] $end
+$var wire 1 ) clk $end
+$var wire 1 * enableA $end
+$var wire 1 + enableB1 $end
+$var wire 1 , enableB2 $end
+$var wire 1 - resetA $end
+$var wire 1 ! ZERO $end
+$var wire 4 3 OUT [3:0] $end
+$var wire 4 4 DATA_BUS [3:0] $end
+$var wire 1 $ CARRY $end
+$var wire 4 5 ALUS [3:0] $end
+$var wire 4 6 ACCU [3:0] $end
+$scope module U1 $end
+$var wire 4 7 D [3:0] $end
+$var wire 1 + enable $end
+$var wire 4 8 Y [3:0] $end
+$upscope $end
+$scope module U2 $end
+$var wire 1 , enable $end
+$var wire 4 9 Y [3:0] $end
+$var wire 4 : D [3:0] $end
+$upscope $end
+$scope module U3 $end
+$var wire 1 ) clk $end
+$var wire 1 * enable $end
+$var wire 1 - reset $end
+$var wire 4 ; ALUS [3:0] $end
+$var reg 4 < ACCU [3:0] $end
+$upscope $end
+$scope module U4 $end
+$var wire 4 = ACCU [3:0] $end
+$var wire 4 > DATA_BUS [3:0] $end
+$var wire 3 ? F [2:0] $end
+$var wire 1 ! ZERO $end
+$var wire 4 @ OUT [3:0] $end
+$var wire 1 $ CARRY $end
+$var reg 5 A OUT5 [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 A
+b0 @
+b0 ?
+bx >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+bx 8
+bx 7
+b0 6
+b0 5
+bx 4
+b0 3
+bx 2
+b0 1
+bx 0
+b0 /
+b0 .
+1-
+1,
+1+
+1*
+1)
+bx (
+b0 '
+b0 &
+b0 %
+0$
+bx #
+b0 "
+1!
+$end
+#1
+0)
+#2
+1)
+0-
+#3
+0)
+#4
+1)
+b1010 #
+b1010 0
+b1010 4
+b1010 8
+b1010 >
+b1010 (
+b1010 2
+b1010 7
+#5
+0)
+#6
+b1010 "
+b1010 3
+b1010 9
+0!
+b1010 %
+b1010 /
+b1010 5
+b1010 :
+b1010 ;
+b1010 @
+b1010 A
+1)
+b10 '
+b10 1
+b10 ?
+#7
+0)
+#8
+1!
+b1010 &
+b1010 .
+b1010 6
+b1010 <
+b1010 =
+b0 "
+b0 3
+b0 9
+b0 %
+b0 /
+b0 5
+b0 :
+b0 ;
+b0 @
+0$
+b0 A
+1)
+b1 '
+b1 1
+b1 ?
+#9
+0)
+#10
+b0 &
+b0 .
+b0 6
+b0 <
+b0 =
+b1010 "
+b1010 3
+b1010 9
+0!
+b1010 %
+b1010 /
+b1010 5
+b1010 :
+b1010 ;
+b1010 @
+0$
+b1010 A
+1)
+b11 '
+b11 1
+b11 ?
+#11
+0)
+#12
+b1010 &
+b1010 .
+b1010 6
+b1010 <
+b1010 =
+b0 %
+b0 /
+b0 5
+b0 :
+b0 ;
+b0 @
+1$
+b10000 A
+1)
+b1111 #
+b1111 0
+b1111 4
+b1111 8
+b1111 >
+bz "
+bz 3
+bz 9
+b1111 (
+b1111 2
+b1111 7
+0,
+b100 '
+b100 1
+b100 ?
+#13
+0)
+#14
+b0 &
+b0 .
+b0 6
+b0 <
+b0 =
+b1111 %
+b1111 /
+b1111 5
+b1111 :
+b1111 ;
+b1111 @
+0$
+b1111 A
+1)
+b10 '
+b10 1
+b10 ?
+#15
+0)
+#16
+b1111 &
+b1111 .
+b1111 6
+b1111 <
+b1111 =
+1)
+b1111 "
+b1111 3
+b1111 9
+1,
+#17
+0)
+#18
+1)
+b0 '
+b0 1
+b0 ?
+#19
+0)
+#20
+1)
+bz #
+bz 0
+bz 4
+bz 8
+bz >
+b1 (
+b1 2
+b1 7
+0+
+#21
+0)
+#22
+bz "
+bz 3
+bz 9
+x!
+bz %
+bz /
+bz 5
+bz :
+bz ;
+bz @
+b0zzzz A
+1)
+b10 '
+b10 1
+b10 ?
+#23
+0)
+#24
+bz &
+bz .
+bz 6
+bz <
+bz =
+b1 "
+b1 3
+b1 9
+0!
+b1 %
+b1 /
+b1 5
+b1 :
+b1 ;
+b1 @
+b1 A
+1)
+b1 #
+b1 0
+b1 4
+b1 8
+b1 >
+1+
+#25
+0)
+#26
+b1 &
+b1 .
+b1 6
+b1 <
+b1 =
+1)
